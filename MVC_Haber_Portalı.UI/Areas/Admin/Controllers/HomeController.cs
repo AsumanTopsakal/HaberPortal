@@ -9,7 +9,7 @@ namespace MVC_Haber_Portalı.UI.Areas.Admin.Controllers
     public class HomeController : Controller
     {
         // GET: Admin/Home
-
+         
         [HttpGet]
         public ActionResult Index()
         {
