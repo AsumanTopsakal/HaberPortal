@@ -1,0 +1,36 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewBag.Title = "Anasayfa";
+}
+
+@*<div class="row">
+
+    @foreach (var item in Model.Kategoriler)
+    {
+        <div class="col">
+            @item.KategoriAdi
+        </div>
+
+    }
+
+
+</div>*@
+
+<div class="row">
+    @foreach (var item in Model.Haberler)
+    {
+        <div class="col-3">
+            <div class="card" style="width: 18rem;">
+                <img src="@item.HaberResimYolu" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.HaberBaslik</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@item.HaberAltBaslik</h6>
+                    <p class="card-text">@item.Haberİcerik</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.AdminTitle</title>
+    <!-- Favicon -->
+    <link rel="icon" href="~/Assets/img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="~/Assets/style.css">
+
+    <link href="~/Assets/css/animate.css" rel="stylesheet" />
+    <link href="~/Assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/classy-nav.css" rel="stylesheet" />
+    <link href="~/Assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Assets/css/owl.carousel.min.css" rel="stylesheet" />
+    @RenderSection("customAdminScripts", false)
+
+</head>
+<body class="container-fluid">
+@Html.Partial("_AdminNavbar")
+
+
+    <div class="container">
+        @RenderBody()
+
+    </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="~/Assets/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="~/Assets/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="~/Assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="~/Assets/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="~/Assets/js/active.js"></script>
+
+    @RenderSection("customAdminScripts", false)
+</body>
+</html>

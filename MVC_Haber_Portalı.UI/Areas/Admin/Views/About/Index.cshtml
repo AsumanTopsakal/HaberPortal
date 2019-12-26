@@ -1,0 +1,16 @@
+﻿
+
+@model AboutPage
+@{
+    ViewBag.AdminTitle = "Hakkımızda İçeriği";
+}
+<hr />
+<a href="@Url.Action("Edit")" class="btn btn-block btn-outline-primary">
+    Düzenle
+</a>
+
+
+<h4>@Model.TitleName</h4>
+
+@Html.Raw(@Model.AboutDescription)
+
