@@ -13,6 +13,11 @@ namespace MVC_Haber_Portalı.UI.Areas.Admin.Controllers
         private AboutPageService _aboutPageService;
 
 
+        public AboutController()
+        {
+            _aboutPageService = new AboutPageService();
+        }
+
 
         [HttpGet]
         public ActionResult Index()
